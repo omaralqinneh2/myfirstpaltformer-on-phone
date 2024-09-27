@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://m1bncl1wgm5e"]
+
+[ext_resource type="Texture2D" uid="uid://bmhkf3ujnsb5h" path="res://arrows/arrow.png" id="1_e8cs6"]
+
+[node name="MobileButtons" type="CanvasLayer"]
+
+[node name="jump" type="TouchScreenButton" parent="."]
+position = Vector2(19, 204)
+scale = Vector2(3.04, 3.04)
+texture_normal = ExtResource("1_e8cs6")
+action = "ui_left"
+
+[node name="right" type="TouchScreenButton" parent="."]
+position = Vector2(245, 301)
+rotation = -3.1388
+scale = Vector2(3.04, 3.04)
+texture_normal = ExtResource("1_e8cs6")
+action = "ui_right"
+
+[node name="left" type="TouchScreenButton" parent="."]
+position = Vector2(616, 204)
+rotation = 1.56505
+scale = Vector2(3.04, 3.04)
+texture_normal = ExtResource("1_e8cs6")
+action = "ui_up"

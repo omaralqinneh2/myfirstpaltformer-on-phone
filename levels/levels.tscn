@@ -1,0 +1,180 @@
+[gd_scene load_steps=5 format=3 uid="uid://ditb5daipoeic"]
+
+[ext_resource type="FontFile" uid="uid://d6u718yaq4rp" path="res://platformer_assets/m6x11.ttf" id="1_byn58"]
+[ext_resource type="Script" path="res://levels/levels.gd" id="1_h5hgg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o1vvd"]
+bg_color = Color(0.10748, 0.10748, 0.10748, 1)
+shadow_color = Color(0, 0, 0, 0.2)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="LabelSettings" id="LabelSettings_2vd0e"]
+font = ExtResource("1_byn58")
+font_size = 56
+
+[node name="levels" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h5hgg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 319.0
+color = Color(0.215686, 0.443137, 0.956863, 1)
+
+[node name="levels" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -98.0
+offset_right = -43.0
+offset_bottom = 98.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="1" type="Button" parent="levels"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 20
+theme_override_fonts/font = ExtResource("1_byn58")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1vvd")
+text = "           	1           "
+
+[node name="2" type="Button" parent="levels"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 20
+theme_override_fonts/font = ExtResource("1_byn58")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1vvd")
+text = "           	2           "
+
+[node name="3" type="Button" parent="levels"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 20
+theme_override_fonts/font = ExtResource("1_byn58")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1vvd")
+text = "           	3           "
+
+[node name="4" type="Button" parent="levels"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 20
+theme_override_fonts/font = ExtResource("1_byn58")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1vvd")
+text = "           	4           "
+
+[node name="5" type="Button" parent="levels"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 20
+theme_override_fonts/font = ExtResource("1_byn58")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1vvd")
+text = "           	5           "
+
+[node name="levels2" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 50.0
+offset_top = -97.0
+offset_right = 182.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="6" type="Button" parent="levels2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 20
+theme_override_fonts/font = ExtResource("1_byn58")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1vvd")
+text = "           	6           "
+
+[node name="7" type="Button" parent="levels2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 20
+theme_override_fonts/font = ExtResource("1_byn58")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1vvd")
+text = "           	7           "
+
+[node name="8" type="Button" parent="levels2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 20
+theme_override_fonts/font = ExtResource("1_byn58")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1vvd")
+text = "           	8           "
+
+[node name="9" type="Button" parent="levels2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 20
+theme_override_fonts/font = ExtResource("1_byn58")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1vvd")
+text = "           	9           "
+
+[node name="10" type="Button" parent="levels2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 20
+theme_override_fonts/font = ExtResource("1_byn58")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_o1vvd")
+text = "           	10           "
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 8.0
+offset_right = 380.0
+offset_bottom = 58.0
+text = "Levels"
+label_settings = SubResource("LabelSettings_2vd0e")
+
+[connection signal="pressed" from="levels/1" to="." method="_on__pressed1"]
+[connection signal="pressed" from="levels/1" to="." method="_on__pressed"]
+[connection signal="pressed" from="levels/2" to="." method="_on__pressed2"]
+[connection signal="pressed" from="levels/2" to="." method="_on__pressed"]
+[connection signal="pressed" from="levels/3" to="." method="_on__pressed3"]
+[connection signal="pressed" from="levels/4" to="." method="_on__pressed4"]
+[connection signal="pressed" from="levels/5" to="." method="_on__pressed5"]
+[connection signal="pressed" from="levels2/6" to="." method="_on__pressed6"]
+[connection signal="pressed" from="levels2/7" to="." method="_on__pressed7"]
+[connection signal="pressed" from="levels2/8" to="." method="_on__pressed8"]
+[connection signal="pressed" from="levels2/8" to="." method="_on__pressed"]
+[connection signal="pressed" from="levels2/9" to="." method="_on__pressed9"]
+[connection signal="pressed" from="levels2/10" to="." method="_on__pressed10"]

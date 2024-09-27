@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqj6t47viv6d1"]
+
+[ext_resource type="Texture2D" uid="uid://jtdq23sejbk4" path="res://platformer_assets/tile_0027.png" id="2_gx6eb"]
+
+[sub_resource type="GDScript" id="GDScript_a5qqo"]
+script/source = "extends Node2D
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file(\"res://scenes/level_5.tscn\")
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wyghn"]
+radius = 7.61577
+
+[node name="key333388" type="Node2D"]
+script = SubResource("GDScript_a5qqo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_gx6eb")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_wyghn")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
